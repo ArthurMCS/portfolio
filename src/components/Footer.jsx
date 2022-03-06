@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const SocialIconsStyled = styled.div`
-    right: 20px;
+    right: 25px;
     bottom: 35px;
     position: absolute;
 
@@ -28,33 +28,55 @@ const SocialIconsStyled = styled.div`
 
     & a svg:hover {
         transform: scale(1.5);
+        filter: drop-shadow(5px 5px 20px #3cff00);
     }
 
-`
 
-// dps fazer um tooltip para os icones
+    @media (max-width: 1200px){
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        margin-left: 10px;
+        bottom: 0;
+        height: 120px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center
+            margin-right: 50px;
+        }
+
+        li {
+            margin: 20px;
+        }
+    }
+
+`;
 
 export default function Footer() {
-    return (
-        <SocialIconsStyled>
-            <ul>
-                <li>
-                  <a href="https://github.com/ArthurMCS" target="_blank" rel="noreferrer">
-                  <AiFillGithub/>
-                  </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/arthurmoreiracostasousa/" target="_blank" rel="noreferrer">
-                      <AiFillLinkedin/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/arthur.moreiracs/" target="_blank" rel="noreferrer">
-                      <AiFillInstagram/>
-                    </a>
-                </li>
-            </ul>
-        </SocialIconsStyled>
+  return (
+    <SocialIconsStyled>
+      <ul>
+        <li>
+          <a href="https://github.com/ArthurMCS" target="_blank" rel="noreferrer">
+            <AiFillGithub />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/arthurmoreiracostasousa/" target="_blank" rel="noreferrer">
+            <AiFillLinkedin />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/arthur.moreiracs/" target="_blank" rel="noreferrer">
+            <AiFillInstagram />
+          </a>
+        </li>
+      </ul>
+    </SocialIconsStyled>
 
-    )
+  );
 }

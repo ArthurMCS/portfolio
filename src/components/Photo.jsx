@@ -2,11 +2,10 @@ import React from 'react';
 import me from '../images/me2.jpeg';
 import { Container, ImgStyled } from '../styles/Photo';
 
-
 export default function Photo() {
-    return (
-        <Container>
-            <ImgStyled src={me} alt="Arthur Moreira"/>
-        </Container>
-    )
-};
+  return (
+    <Container>
+      <ImgStyled src={me} alt="Arthur Moreira" />
+    </Container>
+  );
+}

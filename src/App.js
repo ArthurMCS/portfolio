@@ -1,17 +1,20 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Projects from "./pages/Projects"
-
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion/dist/framer-motion';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
 
 function App() {
+  const location = useLocation();
   return (
-      <Routes>
-        <Route exact path="/"  element={<Home/>}/>
-        <Route path="/about"  element={<About/>}/>
-        <Route path="/projects"  element={<Projects/>}/>
+    <AnimatePresence exitBeforeEnter initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
+    </AnimatePresence>
   );
 }
 

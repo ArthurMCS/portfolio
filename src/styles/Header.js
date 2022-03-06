@@ -1,44 +1,79 @@
 import styled from 'styled-components';
 
-export const HeaderStyled = styled.section`
+export const HeaderStyled = styled.header`
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 15px;
     margin-right: 20px;
+    height: 100px;
+
+    @media (max-width: 1200px){
+        height: 50px;
+        .active {
+          position: fixed;
+      }
+    }
 `
 
 export const NavbarStyled = styled.section`
     display: flex;
-    font-size: 30px;
+    align-items: center;
+    font-size: 40px;
+    transition: 0.6s;
+    opacity: ${({ isVisible }) => isVisible ? 1 : 0};
 
     & .link{
         color: #3cff00;
         margin-right: 50px;
-        transition: transform 0.6s ease;
-        animation-name: display;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
-        opacity: 0;
+        transition: transform 0.5s;
+        margin-left: 20px;
+        cursor: pointer;
     }
-
-    @keyframes display {
-        to { opacity: 1; }
-    }
-
 
     & .link:hover {
-        transform: scale(1.5);
-        cursor: pointer;
-        color: #e9e6e6;
+        text-shadow: 0 0 5px #3cff00,
+            0 0 25px #3cff00, 0 0 50px #3cff00, 0 0 200px #3cff00;
+        transform: scale(1.3);
     } 
     
+    @media (max-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: fixed !important;
+      width: 100%;
+      top: 0px;
+      right: 0px;
+      background-color: #3cff00;
+      height: 100%;
+      width: 100%;
+      z-index: 1000;
+      transition: 0.6s;
+      transform: translateY(
+        ${({ isVisible }) => isVisible ? '0' : '-100vh'}
+      );
+
+      svg {
+        display: none;
+      }
+
+      .link {
+          color: black;
+          font-size: 35px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 30px;
+          font-weight: 600;
+      }
+    }
 
 `
 
 export const HambugerBtnStyled = styled.div`
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 10%;
     position: relative;
     margin-left: 40px;
@@ -52,10 +87,13 @@ export const HambugerBtnStyled = styled.div`
         border-radius: 20px;
         top: 30%;
         left: 15%;
+        box-shadow: 2px 2px 15px #3cff00;
         background-color: #3cff00;
         transition: all 1s ease;
 
+
     }
+
 
     &:before {
         content: '';
@@ -66,7 +104,8 @@ export const HambugerBtnStyled = styled.div`
         top: 60%;
         left: 15%;
         background-color: #3cff00;
-        transition: all 1s ease
+        box-shadow: 2px 2px 15px #3cff00;
+        transition: all 1s ease;
 
     }
 
@@ -80,5 +119,21 @@ export const HambugerBtnStyled = styled.div`
         transform: rotate(-405deg);
         top: 45%;
         background-color: #e9e6e6
-    } 
+    }
+
+
+    @media (max-width: 1200px) {
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 1001;
+
+        &.active::after{
+        background-color: black;
+        }
+
+         &.active::before{
+        background-color: black;
+        } 
+    }
 `
