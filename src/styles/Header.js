@@ -21,7 +21,7 @@ export const NavbarStyled = styled.section`
     align-items: center;
     font-size: 40px;
     transition: 0.6s;
-    opacity: ${({ isVisible }) => isVisible ? 1 : 0};
+    /* opacity: ${({ isVisible }) => isVisible ? 1 : 0}; */
 
     & .link{
         color: #3cff00;
@@ -50,6 +50,7 @@ export const NavbarStyled = styled.section`
       height: 100%;
       width: 100%;
       z-index: 1000;
+      opacity: ${({ isVisible }) => isVisible ? 1 : 0};
       transition: 0.6s;
       transform: translateY(
         ${({ isVisible }) => isVisible ? '0' : '-100vh'}
@@ -72,68 +73,57 @@ export const NavbarStyled = styled.section`
 `
 
 export const HambugerBtnStyled = styled.div`
-    width: 90px;
-    height: 90px;
-    border-radius: 10%;
-    position: relative;
-    margin-left: 40px;
-    cursor: pointer;
+    display: none;
+ @media (max-width: 1200px) {
+     display: flex;
+     width: 50px;
+     height: 50px;
+     border-radius: 10%;
+     position: absolute;
+     margin-left: 40px;
+     cursor: pointer;
+     z-index: 1001;
+ 
+     &:after {
+         content: '';
+         position: absolute;
+         width: 70%;
+         height: 10%;
+         border-radius: 20px;
+         top: 30%;
+         left: 15%;
+         box-shadow: 2px 2px 15px #3cff00;
+         background-color: #3cff00;
+         transition: all 1s ease;
+ 
+ 
+     }
+ 
+     &:before {
+         content: '';
+         position: absolute;
+         width: 70%;
+         height: 10%;
+         border-radius: 20px;
+         top: 60%;
+         left: 15%;
+         background-color: #3cff00;
+         box-shadow: 2px 2px 15px #3cff00;
+         transition: all 1s ease;
+ 
+     }
+ 
+     &.active::after{
+         transform: rotate(225deg);
+         top: 45%;
+         background-color: black;
+     }
+ 
+     &.active::before{
+         transform: rotate(-405deg);
+         top: 45%;
+         background-color: black;
+     }
+ }
 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 70%;
-        height: 10%;
-        border-radius: 20px;
-        top: 30%;
-        left: 15%;
-        box-shadow: 2px 2px 15px #3cff00;
-        background-color: #3cff00;
-        transition: all 1s ease;
-
-
-    }
-
-
-    &:before {
-        content: '';
-        position: absolute;
-        width: 70%;
-        height: 10%;
-        border-radius: 20px;
-        top: 60%;
-        left: 15%;
-        background-color: #3cff00;
-        box-shadow: 2px 2px 15px #3cff00;
-        transition: all 1s ease;
-
-    }
-
-    &.active::after{
-        transform: rotate(225deg);
-        top: 45%;
-        background-color: #e9e6e6
-    }
-
-    &.active::before{
-        transform: rotate(-405deg);
-        top: 45%;
-        background-color: #e9e6e6
-    }
-
-
-    @media (max-width: 1200px) {
-        margin-left: 20px;
-        width: 50px;
-        height: 50px;
-        z-index: 1001;
-
-        &.active::after{
-        background-color: black;
-        }
-
-         &.active::before{
-        background-color: black;
-        } 
-    }
 `
