@@ -96,7 +96,7 @@ const ArticleStyled = styled.article`
 
        p {
            width: 305px;
-           font-size: 19px;
+           font-size: 17.8px;
            margin-bottom: 5px;
        } 
 
@@ -107,6 +107,7 @@ const ArticleStyled = styled.article`
            display: flex;
            align-items: center;
            justify-content: center;
+          
 
            a {
               margin-bottom: 20px;
@@ -126,7 +127,7 @@ const ArticleStyled = styled.article`
                   margin-top: 10px;
                   font-size: 16px;
                   width: 0;
-                  margin-bottom: 15px;
+                  margin-bottom: 10px;
                   visibility: visible;
                   color: #fff;
                 }
@@ -173,7 +174,7 @@ export default function About() {
         <p>
           Além disso, tenho experiência com metodologias ágeis, como kanban e Scrum. 
         </p>
-        <h1 style={{ marginTop: '80px' }}>Skills</h1>
+        <h1 style={{ marginTop: '35px' }}>Skills</h1>
         <div>
           <a
             href="https://pt-br.reactjs.org/"

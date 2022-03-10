@@ -28,7 +28,6 @@ const ArticleStyled = styled.article`
     a {
       text-decoration: none;
       font-size: 30px;
-      color: #e9e6e6;
       animation-name: display;
       animation-duration: 2.5s;
       animation-delay: 10s;
@@ -68,10 +67,10 @@ const ArticleStyled = styled.article`
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             text-align: justify-all;
             margin-top: 20px;
-            width: 190px;  
+            width: 185px;  
             margin-left: 5px ;
         }
     }

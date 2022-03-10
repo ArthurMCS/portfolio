@@ -41,29 +41,8 @@ const ContactsStyled = styled.div`
         cursor: pointer;
 
         P { 
-            margin-top: 40px;
-            transform: translateY(-5vh);
-            visibility: hidden;
-            transition: 0.3s;
-            color: transparent;
+           color: #fff;    
         }
-    }
-
-    a:hover {
-        svg {
-            filter: drop-shadow(5px 5px 35px #3cff00);
-        }
-        p { 
-            transform: translateY(0vh);
-            visibility: visible;
-            color: #3cff00;
-            
-        }
-    }
-
-    p {
-        text-align: justify;
-        font-size: 28px;
     }
 
     div {
@@ -73,11 +52,6 @@ const ContactsStyled = styled.div`
 
     a svg {
         font-size: 80px;
-        transition: transform 0.5s ease;
-    }
-
-    & a svg:hover {
-        transform: scale(1.5);
     }
    
   }
@@ -91,6 +65,7 @@ const ContactsStyled = styled.div`
     p {
         font-size: 22px;
       }
+
   }
 
   }
