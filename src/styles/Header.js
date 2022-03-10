@@ -61,7 +61,7 @@ export const NavbarStyled = styled.section`
       }
 
       .link {
-          color: black;
+          color: #000000;
           font-size: 35px;
           margin-left: auto;
           margin-right: auto;

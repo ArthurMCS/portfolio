@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     border-radius: 50%;
-    margin-top: -110px;
-    margin-left: 180px;
+    margin-top: -70px;
+    margin-left: 170px;
     width: 400px;
     height: 400px;
     overflow: hidden;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ArticleStyled = styled.article`
     margin-left: 300px;
     position: relative;
-    margin-top: 300px;
+    margin-top: 260px;
     margin-left: 900px;
 
     h1 {
@@ -104,7 +104,7 @@ export default function Article() {
     <ArticleStyled>
       <h1>Olá, Mundo!</h1>
       <p className="p1">Meu nome é Arthur Moreira.</p>
-      <p className="p2">Desenvolvedor Full-Stack, com foco em Javascript, React, NodeJS, mas sempre disposto a aprender e contribuir mais. </p>
+      <p className="p2">Desenvolvedor Full-Stack, com foco em Javascript, React, Node-JS, mas sempre disposto a aprender e contribuir mais. </p>
       <a href="#" download>{'< currículo />'}</a>
     </ArticleStyled>
   );
