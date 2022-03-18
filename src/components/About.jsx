@@ -6,16 +6,19 @@ import {
   SiDocker, SiMysql, SiNodedotjs, SiJest, SiUbuntu, SiExpress, SiSequelize,
   SiJsonwebtokens
 } from 'react-icons/si';
-import { motion } from 'framer-motion/dist/framer-motion';
-import Header from '../components/Header';
 
 const ArticleStyled = styled.article`
     display: block;
-    margin-left: auto;
+    margin-left: 650px;
     margin-right: auto;
     text-align: center;
     max-width: 1000px; 
-    margin-top: 100px;
+    margin-top: 195px;
+
+    .skills {
+      margin-top: 195px;
+      margin-bottom: 195px;
+    }
 
     h1 { 
         font-size: 50px
@@ -59,8 +62,7 @@ const ArticleStyled = styled.article`
         p { 
             transform: translateY(0vh);
             visibility: visible;
-            color: #3cff00;
-            
+            color: #3cff00;   
         }
     }
 
@@ -83,10 +85,15 @@ const ArticleStyled = styled.article`
     
     @media (max-width: 1000px) {
         display: flex;
+        margin-left: auto;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 195px;
+
+        .skills {
+          margin-top: 30px
+        }
 
         h1 {
             margin-top: 10px;
@@ -148,12 +155,6 @@ const ArticleStyled = styled.article`
 
 export default function About() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <Header about />
       <ArticleStyled>
         <h1>Arthur Moreira</h1>
         <p>
@@ -174,6 +175,7 @@ export default function About() {
         <p>
           Além disso, tenho experiência com metodologias ágeis, como kanban e Scrum. 
         </p>
+        <div className="skills">
         <h1 style={{ marginTop: '35px' }}>Skills</h1>
         <div>
           <a
@@ -297,8 +299,7 @@ export default function About() {
             <p>JWT</p>
           </a>
         </div>
+        </div>
       </ArticleStyled>
-    </motion.div>
-
   );
 }

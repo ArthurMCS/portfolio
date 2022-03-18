@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import { NavbarStyled, HeaderStyled, HambugerBtnStyled } from '../styles/Header';
 
 export default function Header(props) {
-  const { home, projects, about, contacts } = props;
+  const { home, projects, contacts } = props;
   const [isActive, setIsActive] = useState(false);
 
   return (
     <HeaderStyled>
       <NavbarStyled isVisible={isActive}>
         {!home && <Link to="/" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Home />'}</Link>}
-        {!about && <Link to="/about" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Sobre />'}</Link>}
         {!projects && <Link to="/projects" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Projetos />'}</Link>}
         {!contacts && <Link to="/contacts" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Contatos />'}</Link>}
       </NavbarStyled>

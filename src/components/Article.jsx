@@ -6,6 +6,7 @@ const ArticleStyled = styled.article`
     position: relative;
     margin-top: 260px;
     margin-left: 900px;
+    height: 400px;
 
     h1 {
         font-size: 50px;

@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Photo from '../components/Photo';
 import Article from '../components/Article';
 import Footer from '../components/Footer';
+import About from '../components/About';
 
 const HomePage = styled.div`
      @media (max-width:1200px){
@@ -21,7 +22,7 @@ const HomePage = styled.div`
 const Sidebar = styled.div`
   width: 20%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   background-color:#3cff00;
@@ -44,6 +45,7 @@ export default function Home() {
         <Sidebar />
         <Photo />
         <Article />
+        <About />
         <Footer />
       </HomePage>
     </motion.div>

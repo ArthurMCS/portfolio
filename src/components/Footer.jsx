@@ -5,7 +5,7 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 const SocialIconsStyled = styled.div`
     right: 25px;
     bottom: 35px;
-    position: absolute;
+    position: fixed;
 
     ul {
         list-style: none;
@@ -33,25 +33,7 @@ const SocialIconsStyled = styled.div`
 
 
     @media (max-width: 1200px){
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 170px;
-        margin-left: 10px;
-        bottom: 0;
-        height: 120px;
-
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: center
-            margin-right: 50px;
-        }
-
-        li {
-            margin: 20px;
-        }
+        display: none;
     }
 
 `;
