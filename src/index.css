@@ -6,7 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
+
 
 h1 {
   font-size:  40px;
@@ -35,4 +38,5 @@ code {
   background: #3cff00;
   border-radius: 50px;
 }
+
 

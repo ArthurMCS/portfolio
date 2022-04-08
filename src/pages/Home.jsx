@@ -6,12 +6,18 @@ import Photo from '../components/Photo';
 import Article from '../components/Article';
 import Footer from '../components/Footer';
 import About from '../components/About';
+import Skills from '../components/Skills';
 
 const HomePage = styled.div`
      @media (max-width:1200px){
       display: flex;
-      align-items: center;
+      align-items: center;     
       flex-direction: column;
+      margin: 0;
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
         
       .activeMenu {
           display: none;
@@ -46,6 +52,7 @@ export default function Home() {
         <Photo />
         <Article />
         <About />
+        <Skills />
         <Footer />
       </HomePage>
     </motion.div>

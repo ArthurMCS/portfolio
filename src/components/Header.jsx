@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { NavbarStyled, HeaderStyled, HambugerBtnStyled } from '../styles/Header';
+import { NavbarStyled, HeaderStyled, HambugerBtnStyled } from '../StyledComponents/Header';
 
 export default function Header(props) {
   const { home, projects, contacts } = props;

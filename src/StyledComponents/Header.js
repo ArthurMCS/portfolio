@@ -9,6 +9,7 @@ export const HeaderStyled = styled.header`
     height: 100px;
 
     @media (max-width: 1200px){
+        margin: 5px;
         height: 50px;
         .active {
           position: fixed;
@@ -21,7 +22,6 @@ export const NavbarStyled = styled.section`
     align-items: center;
     font-size: 40px;
     transition: 0.6s;
-    /* opacity: ${({ isVisible }) => isVisible ? 1 : 0}; */
 
     & .link{
         color: #3cff00;

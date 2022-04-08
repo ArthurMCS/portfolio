@@ -13,7 +13,7 @@ const ProjectsSection = styled.section`
 
         h1 {
             font-weight: 400;
-            font-size: 70px;
+            font-size: 63px;
         }
 
         div {
@@ -30,7 +30,7 @@ const ProjectsSection = styled.section`
         @media(max-width: 1200px){
             h1 {
                 font-size: 45px;
-                margin-top: 10px;
+                margin-top: 50px;
                 margin-bottom: 50px;
             }
 
@@ -53,7 +53,7 @@ export default function Projects() {
       <>
         <Header projects />
         <ProjectsSection>
-          <h1>Projetos</h1>
+          <h1>{'< Projetos />'}</h1>
           {projectsData.map((project, index) => <ProjectsCard {...project} key={index} />)}
         </ProjectsSection>
       </>

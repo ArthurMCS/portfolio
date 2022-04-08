@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     border-radius: 50%;
-    margin-top: -70px;
+    margin-top: -50px;
     margin-left: 170px;
     width: 400px;
     height: 400px;
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   @media (max-width: 1200px) {
         position: absolute;
-        margin-top: 20px;;
+        margin-top: 50px;;
         width: 150px;
         height: 150px;
         display: block;
