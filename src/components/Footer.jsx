@@ -1,7 +1,6 @@
 import React from 'react';
-import { SocialIconsStyled } from '../StyledComponents/FooterIcons';
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-
+import SocialIconsStyled from '../StyledComponents/FooterIcons';
 
 export default function Footer() {
   return (

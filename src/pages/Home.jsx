@@ -1,43 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { motion } from 'framer-motion/dist/framer-motion';
+import { HomePage, Sidebar } from '../StyledComponents/Home';
 import Header from '../components/Header';
 import Photo from '../components/Photo';
 import Article from '../components/Article';
 import Footer from '../components/Footer';
 import About from '../components/About';
 import Skills from '../components/Skills';
-
-const HomePage = styled.div`
-     @media (max-width:1200px){
-      display: flex;
-      align-items: center;     
-      flex-direction: column;
-      margin: 0;
-
-      ::-webkit-scrollbar {
-        display: none;
-      }
-        
-      .activeMenu {
-          display: none;
-      }
-     }
-`;
-
-const Sidebar = styled.div`
-  width: 20%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color:#3cff00;
-
-  @media (max-width: 1200px) {
-      display: none;
-  }
-
-`;
 
 export default function Home() {
   return (

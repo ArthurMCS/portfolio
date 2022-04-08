@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledCard = styled.div`
+const StyledCard = styled.div`
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -65,3 +65,5 @@ export const StyledCard = styled.div`
         }
     }
 `;
+
+export default StyledCard;

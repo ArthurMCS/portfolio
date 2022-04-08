@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const AboutArticle = styled.article`
+const AboutArticle = styled.article`
     display: block;
     margin-left: 730px;
     margin-right: auto;
@@ -54,3 +54,5 @@ export const AboutArticle = styled.article`
     }
   }
 `;
+
+export default AboutArticle;

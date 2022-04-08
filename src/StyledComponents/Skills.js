@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SkillsDiv = styled.div`
+const SkillsDiv = styled.div`
     display: block;
     margin-left: 730px;
     margin-bottom: 195px;
@@ -136,3 +136,5 @@ export const SkillsDiv = styled.div`
 
     }
 `;
+
+export default SkillsDiv;

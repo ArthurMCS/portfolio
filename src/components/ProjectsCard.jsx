@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-indent */
 import React from 'react';
-import { StyledCard } from '../StyledComponents/Cards';
 import { SiGithub } from 'react-icons/si';
-
+import StyledCard from '../StyledComponents/Cards';
 
 export default function ProjectsCard(project) {
   const {

@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-expressions */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { NavbarStyled, HeaderStyled, HambugerBtnStyled } from '../StyledComponents/Header';
 
@@ -15,9 +17,15 @@ export default function Header(props) {
       </NavbarStyled>
       <HambugerBtnStyled onClick={({ target }) => {
         target.classList.toggle('active');
-        isActive ? setIsActive(false) : setIsActive(true)
+        isActive ? setIsActive(false) : setIsActive(true);
       }}
       />
     </HeaderStyled>
   );
 }
+
+Header.propTypes = {
+  home: PropTypes.bool.isRequired,
+  projects: PropTypes.bool.isRequired,
+  contacts: PropTypes.bool.isRequired,
+};

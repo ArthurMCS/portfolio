@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SocialIconsStyled = styled.div`
+const SocialIconsStyled = styled.div`
     right: 25px;
     bottom: 35px;
     position: fixed;
@@ -35,3 +35,5 @@ export const SocialIconsStyled = styled.div`
     }
 
 `;
+
+export default SocialIconsStyled;

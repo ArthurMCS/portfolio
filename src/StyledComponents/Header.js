@@ -15,7 +15,7 @@ export const HeaderStyled = styled.header`
           position: fixed;
       }
     }
-`
+`;
 
 export const NavbarStyled = styled.section`
     display: flex;
@@ -50,10 +50,10 @@ export const NavbarStyled = styled.section`
       height: 100%;
       width: 100%;
       z-index: 1000;
-      opacity: ${({ isVisible }) => isVisible ? 1 : 0};
+      opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
       transition: 0.6s;
       transform: translateY(
-        ${({ isVisible }) => isVisible ? '0' : '-100vh'}
+        ${({ isVisible }) => (isVisible ? '0' : '-100vh')}
       );
 
       svg {
@@ -70,7 +70,7 @@ export const NavbarStyled = styled.section`
       }
     }
 
-`
+`;
 
 export const HambugerBtnStyled = styled.div`
     display: none;
@@ -126,4 +126,4 @@ export const HambugerBtnStyled = styled.div`
      }
  }
 
-`
+`;

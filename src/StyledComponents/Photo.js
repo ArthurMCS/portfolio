@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
     border-radius: 50%;
     margin-top: -50px;
@@ -24,7 +23,7 @@ export const Container = styled.div`
   }
 
 
-`
+`;
 
 export const ImgStyled = styled.img`
     position: absolute;
@@ -34,4 +33,4 @@ export const ImgStyled = styled.img`
     @media (max-width: 1200px) {
      bottom: -55px;
   }
-`
+`;

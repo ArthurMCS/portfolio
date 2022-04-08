@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MainArticle = styled.article`
+const MainArticle = styled.article`
     margin-left: 300px;
     position: relative;
     margin-top: 260px;
@@ -81,3 +81,5 @@ export const MainArticle = styled.article`
     }
 
 `;
+
+export default MainArticle;
