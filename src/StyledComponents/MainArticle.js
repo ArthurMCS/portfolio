@@ -18,7 +18,7 @@ const MainArticle = styled.article`
         font-size: 28px;
         margin-bottom: 20px;
         margin-top: 0px;
-        width: 450px ;
+        width: 500px ;
     }
 
     .p2 {

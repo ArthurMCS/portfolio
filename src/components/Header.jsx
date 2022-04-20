@@ -25,7 +25,13 @@ export default function Header(props) {
 }
 
 Header.propTypes = {
-  home: PropTypes.bool.isRequired,
-  projects: PropTypes.bool.isRequired,
-  contacts: PropTypes.bool.isRequired,
+  home: PropTypes.bool,
+  projects: PropTypes.bool,
+  contacts: PropTypes.bool,
+};
+
+Header.defaultProps = {
+  home: false,
+  projects: false,
+  contacts: false,
 };

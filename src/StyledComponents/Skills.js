@@ -5,7 +5,8 @@ const SkillsDiv = styled.div`
     margin-left: 730px;
     margin-bottom: 195px;
     text-align: center;
-    max-width: 1000px; 
+    max-width: 1000px;
+    overflow: hidden;
 
     h1 { 
         font-size: 55px

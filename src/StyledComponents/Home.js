@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HomePage = styled.div`
+    overflow-y: hidden;
      @media (max-width:1200px){
       display: flex;
       align-items: center;     
@@ -18,7 +19,7 @@ export const HomePage = styled.div`
 `;
 
 export const Sidebar = styled.div`
-  width: 20%;
+  width: 430px;
   height: 100%;
   position: fixed;
   left: 0;

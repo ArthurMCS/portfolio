@@ -11,9 +11,21 @@ const StyledCard = styled.div`
     border: 1px solid #3cff00;
     border-radius: 5%;
     background-color: #272727c3;
+
+    section {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        a {
+            margin: 20px;
+        }
+    }
     
     .title {
-        margin-top: 20px;
+        margin-top: 50px;
         text-decoration: none;
         font-size: 50px;
         color: #3cff00;
@@ -24,15 +36,15 @@ const StyledCard = styled.div`
     p {
         text-align: justify;
         max-width: 400px;
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 50px;
         font-size: 25px;
     }
 
     svg { 
         color: #3cff00;
-        height: 80px; 
-        width: 80px;
+        height: 70px; 
+        width: 70px;
         transition: transform 0.5s ease;
     }
 
@@ -47,13 +59,15 @@ const StyledCard = styled.div`
         margin-bottom: 50px;
         margin-top: 25px;
 
+        section { margin-bottom: 20px;}
+
         .title {
             font-size: 30px;
         }
 
         p {
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             max-width: 200px;
             text-align: justify;
             font-size: 14px;

@@ -7,6 +7,7 @@ export const HeaderStyled = styled.header`
     margin-top: 15px;
     margin-right: 20px;
     height: 100px;
+    width: 100%;
 
     @media (max-width: 1200px){
         margin: 5px;
