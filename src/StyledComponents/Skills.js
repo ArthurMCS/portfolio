@@ -38,14 +38,14 @@ const SkillsDiv = styled.div`
             transition: 0.3s;
             color: transparent;
             text-align: justify;
-          font-size: 28px;
+            font-size: 28px;
 
         }
     }
 
     a:hover {
         svg {
-            filter: drop-shadow(5px 5px 35px #3cff00);
+            filter: drop-shadow(5px 5px 15px #3cff00);
         }
         p { 
             transform: translateY(0vh);

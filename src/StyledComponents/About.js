@@ -8,10 +8,9 @@ const AboutArticle = styled.article`
     max-width: 1000px; 
     margin-top: 340px;
     margin-bottom: 265px;
-    
 
     h1 { 
-        font-size: 55px
+        font-size: 55px;
     }
 
     p {

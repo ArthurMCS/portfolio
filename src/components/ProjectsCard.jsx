@@ -11,7 +11,7 @@ export default function ProjectsCard(project) {
 
   return (
         <StyledCard>
-            <h2 className="title">{ name }</h2>
+            <h1 className="title">{ name }</h1>
             <p>{ description }</p>
             <section>
             <a
