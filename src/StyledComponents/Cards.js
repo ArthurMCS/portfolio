@@ -62,6 +62,8 @@ const StyledCard = styled.div`
         section { margin-bottom: 20px;}
 
         .title {
+            margin: 0px;
+            margin-top: 35px;
             font-size: 30px;
         }
 

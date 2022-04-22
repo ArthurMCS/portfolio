@@ -83,6 +83,7 @@ export const HambugerBtnStyled = styled.div`
      position: absolute;
      margin-left: 40px;
      cursor: pointer;
+     margin-right: 10px;
      z-index: 1001;
  
      &:after {
