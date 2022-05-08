@@ -11,7 +11,13 @@ export default function ProjectsCard(project) {
 
   return (
         <StyledCard>
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <h1 className="title">{ name }</h1>
+          </a>
             <p>{ description }</p>
             <section>
             <a
@@ -20,6 +26,7 @@ export default function ProjectsCard(project) {
               rel="noreferrer"
             >
              <SiGithub />
+              gitHub
             </a>
             <a
               href={link}
@@ -27,6 +34,7 @@ export default function ProjectsCard(project) {
               rel="noreferrer"
             >
             <CgWebsite />
+             site
             </a>
             </section>
         </StyledCard>

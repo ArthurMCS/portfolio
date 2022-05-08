@@ -47,7 +47,7 @@ export const NavbarStyled = styled.section`
       width: 100%;
       top: 0px;
       right: 0px;
-      background-color: #3cff00;
+      background-color: #111;
       height: 100%;
       width: 100%;
       z-index: 1000;
@@ -62,7 +62,7 @@ export const NavbarStyled = styled.section`
       }
 
       .link {
-          color: #000000;
+          color: #3cff00;
           font-size: 35px;
           margin-left: auto;
           margin-right: auto;
@@ -118,13 +118,11 @@ export const HambugerBtnStyled = styled.div`
      &.active::after{
          transform: rotate(225deg);
          top: 45%;
-         background-color: black;
      }
  
      &.active::before{
          transform: rotate(-405deg);
          top: 45%;
-         background-color: black;
      }
  }
 

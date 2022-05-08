@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 const SocialIconsStyled = styled.div`
-    right: 25px;
-    bottom: 35px;
+    bottom: 225px;
+    left: 235px;
     position: fixed;
 
     ul {
         list-style: none;
         text-align: center;
+        display: flex;
     }
 
     li {
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
     a { 

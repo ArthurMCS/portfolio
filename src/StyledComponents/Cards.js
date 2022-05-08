@@ -10,7 +10,12 @@ const StyledCard = styled.div`
     height: 450px;
     border: 1px solid #3cff00;
     border-radius: 5%;
-    background-color: #272727c3;
+    background:  #1C1C1C;
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
 
     section {
         border: none;
@@ -21,11 +26,20 @@ const StyledCard = styled.div`
 
         a {
             margin: 20px;
+            flex-direction: column;
+            display: inherit;
+            flex-direction: column;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 35px;
+            font-size: 18px;
+            cursor: pointer;
         }
     }
     
     .title {
-        margin-top: 50px;
+        margin-top: 55px;
         text-decoration: none;
         font-size: 50px;
         color: #3cff00;
@@ -37,15 +51,16 @@ const StyledCard = styled.div`
         text-align: justify;
         max-width: 400px;
         margin-top: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
         font-size: 25px;
     }
 
     svg { 
         color: #3cff00;
-        height: 70px; 
-        width: 70px;
+        height: 52px; 
+        width: 52px;
         transition: transform 0.5s ease;
+        margin: 10px;
     }
 
     svg:hover {
@@ -55,29 +70,28 @@ const StyledCard = styled.div`
     
     @media (max-width: 1200px) {
         width: 250px;
-        height: 250px;
+        height: 350px;
         margin-bottom: 50px;
         margin-top: 25px;
-
-        section { margin-bottom: 20px;}
 
         .title {
             margin: 0px;
             margin-top: 35px;
-            font-size: 30px;
+            font-size: 35px;
         }
 
         p {
             margin-top: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 0;
             max-width: 200px;
             text-align: justify;
-            font-size: 14px;
+            font-size: 15px;
         }
 
+
         svg {
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
         }
     }
 `;

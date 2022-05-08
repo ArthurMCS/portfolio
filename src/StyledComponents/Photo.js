@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
     border-radius: 50%;
     margin-top: 225px;
-    margin-left: 210px;
+    margin-left: 150px;
     width: 400px;
     height: 400px;
     overflow: hidden;
     position: fixed;
-    border: 8px solid  #fff;
+    border: 8px solid  #3cff00;
 
 
   @media (max-width: 1200px) {

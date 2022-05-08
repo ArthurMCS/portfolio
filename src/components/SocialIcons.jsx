@@ -1,8 +1,8 @@
 import React from 'react';
-import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import SocialIconsStyled from '../StyledComponents/FooterIcons';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import SocialIconsStyled from '../StyledComponents/SocialIcons';
 
-export default function Footer() {
+export default function Icons() {
   return (
     <SocialIconsStyled>
       <ul>
@@ -14,11 +14,6 @@ export default function Footer() {
         <li>
           <a href="https://www.linkedin.com/in/arthurmoreiracostasousa/" target="_blank" rel="noreferrer">
             <AiFillLinkedin />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/arthur.moreiracs/" target="_blank" rel="noreferrer">
-            <AiFillInstagram />
           </a>
         </li>
       </ul>

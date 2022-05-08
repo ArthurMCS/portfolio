@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const SkillsDiv = styled.div`
     display: block;
     margin-left: 730px;
-    margin-bottom: 195px;
+    margin-bottom: 100px;
     text-align: center;
     max-width: 1000px;
     overflow: hidden;

@@ -15,7 +15,7 @@ const MainArticle = styled.article`
     p {
         text-align: justify-all;
         color: #e9e6e6;
-        font-size: 28px;
+        font-size: 25px;
         margin-bottom: 20px;
         margin-top: 0px;
         width: 500px ;

@@ -15,12 +15,6 @@ const ProjectsSection = styled.section`
             transition: all 0.5s;
         }
 
-        div:hover {
-            box-shadow: 0 0 5px #3cff00,
-            0 0 25px #3cff00, 0 0 50px #3cff00, 0 0 100px #3cff00;
-            cursor: pointer;
-
-        }
 
         @media(max-width: 1200px){
             h1 {

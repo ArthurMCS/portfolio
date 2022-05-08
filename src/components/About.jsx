@@ -22,8 +22,7 @@ export default function About() {
         Como desenvolvedor Front-End, domino algumas tecnologias como HTML, CSS, JavaScript, React,
         Redux, Context API,
         React Hooks, Bootstrap, Styled Components. Já como desenvolvedor Back-End, possuo
-        experiência com Node-js, Express, Sequelize, Mysql, APIs REST/RESTful, Docker,
-        dentre outras.
+        experiência com Node-js, Express, Sequelize, Mysql, APIs REST/RESTful, dentre outras.
       </p>
       <p>
         Além disso, tenho experiência com metodologias ágeis, como kanban e Scrum.
