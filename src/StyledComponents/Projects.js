@@ -6,6 +6,11 @@ const ProjectsSection = styled.section`
         justify-content: center;
         flex-direction: column;
 
+        .projectsContainer {
+            display: inherit;
+            flex-wrap: wrap;
+        }
+
         h1 {
             font-weight: 400;
             font-size: 63px;
@@ -13,6 +18,7 @@ const ProjectsSection = styled.section`
 
         div {
             transition: all 0.5s;
+            margin: 20px;
         }
 
 
@@ -21,6 +27,11 @@ const ProjectsSection = styled.section`
                 font-size: 45px;
                 margin-top: 50px;
                 margin-bottom: 50px;
+            }
+
+            .projectsContainer {
+                display: inherit;
+                flex-direction: column;
             }
 
             div:active {

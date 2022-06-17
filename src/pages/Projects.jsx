@@ -17,7 +17,9 @@ export default function Projects() {
         <Header projects />
         <ProjectsSection>
           <h1>{'< Projetos />'}</h1>
-          {projectsData.map((project) => <ProjectsCard {...project} key={project.id} />)}
+          <div className="projectsContainer">
+            {projectsData.map((project) => <ProjectsCard {...project} key={project.id} />)}
+          </div>
         </ProjectsSection>
       </>
     </motion.div>

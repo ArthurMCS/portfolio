@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const SocialIconsStyled = styled.div`
-    bottom: 225px;
+    margin-top: 100px;
+    bottom: 100px;
     left: 235px;
     position: fixed;
 

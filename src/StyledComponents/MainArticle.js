@@ -9,7 +9,7 @@ const MainArticle = styled.article`
 
     h1 {
         font-size: 50px;
-        font-weight: 500;
+        font-weight: 800;
     }
 
     p {
