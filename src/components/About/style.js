@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const AboutArticle = styled.article`
     display: block;
-    margin-left: 730px;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
     max-width: 1000px; 
-    margin-top: 340px;
+    margin-top: 150px;
     margin-bottom: 265px;
 
     h1 { 
@@ -51,7 +51,6 @@ const AboutArticle = styled.article`
            margin-bottom: 5px;
        } 
     }
-  }
 `;
 
 export default AboutArticle;

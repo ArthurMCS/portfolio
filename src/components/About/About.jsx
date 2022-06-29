@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutArticle from '../StyledComponents/About';
+import AboutArticle from './style';
 
 export default function About() {
   return (

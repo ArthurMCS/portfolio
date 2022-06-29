@@ -5,12 +5,10 @@ export const HeaderStyled = styled.header`
     justify-content: flex-end;
     align-items: center;
     margin-top: 15px;
-    margin-right: 20px;
     height: 100px;
     width: 100%;
 
     @media (max-width: 1200px){
-        margin: 5px;
         height: 50px;
         .active {
           position: fixed;
