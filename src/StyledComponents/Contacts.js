@@ -9,7 +9,7 @@ const ContactsStyled = styled.div`
   right: auto;
 
   h1 {
-    font-size: 60px;
+    font-size: 63px;
     margin-top: 80px;
     margin-bottom: 5px;
   }
@@ -54,15 +54,13 @@ const ContactsStyled = styled.div`
 
   @media (max-width: 1200px){
     h1 {
-      font-size: 40px;
+      font-size: 45px;
     }
 
 
     p {
         font-size: 22px;
       }
-
-  }
 
   }
 `;

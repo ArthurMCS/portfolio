@@ -8,7 +8,7 @@ export const MainWrapper = styled.section`
         list-style: none;
         text-align: center;
         display: flex;
-        margin-top: 650px;
+        margin-top: 630px;
         margin-left: 235px;
     }
 
@@ -44,7 +44,7 @@ export const MainWrapper = styled.section`
 export const MainArticle = styled.article`
     margin-left: 300px;
     position: relative;
-    margin-top: 240px;
+    margin-top: 300px;
     margin-left: 500px;
     height: 400px;
 
@@ -58,12 +58,12 @@ export const MainArticle = styled.article`
         color: #e9e6e6;
         font-size: 25px;
         margin-bottom: 20px;
-        margin-top: 0px;
+        margin-top: 20px;
         width: 500px ;
     }
 
     .p2 {
-      margin-bottom: 40px;
+      margin-bottom: 55px;
     }
 
     a {
@@ -136,7 +136,7 @@ export const ImgWrapper = styled.div`
 
   @media (max-width: 1200px) {
         position: absolute;
-        margin-top: 50px;;
+        margin-top: 50px;
         width: 150px;
         height: 150px;
         display: block;

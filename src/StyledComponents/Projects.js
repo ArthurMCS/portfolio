@@ -5,10 +5,12 @@ const ProjectsSection = styled.section`
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-top: 100px;
 
         .projectsContainer {
             display: inherit;
             flex-wrap: wrap;
+            margin-top: 50px;
         }
 
         h1 {
@@ -23,15 +25,16 @@ const ProjectsSection = styled.section`
 
 
         @media(max-width: 1200px){
+            margin-top: 50px;
             h1 {
                 font-size: 45px;
-                margin-top: 50px;
                 margin-bottom: 50px;
             }
 
             .projectsContainer {
                 display: inherit;
                 flex-direction: column;
+                margin-top: 0;
             }
 
             div:active {

@@ -46,10 +46,12 @@ const SkillsDiv = styled.div`
 
     a:hover {
         svg {
-            filter: drop-shadow(5px 5px 15px #3cff00);
+            filter: drop-shadow(3px 5px 10px #3cff00);
         }
+
         p { 
             transform: translateY(0vh);
+            margin-top: 25px;
             visibility: visible;
             color: #3cff00;   
         }

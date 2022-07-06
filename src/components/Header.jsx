@@ -13,7 +13,7 @@ export default function Header(props) {
       <NavbarStyled isVisible={isActive}>
         {!home && <Link to="/" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Home />'}</Link>}
         {!projects && <Link to="/projects" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Projetos />'}</Link>}
-        {!contacts && <Link to="/contacts" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Contatos />'}</Link>}
+        {!contacts && <Link to="/contacts" className="link" onClick={() => setIsActive(false)} style={{ textDecoration: 'none' }}>{'< Contato />'}</Link>}
       </NavbarStyled>
       <HambugerBtnStyled onClick={({ target }) => {
         target.classList.toggle('active');
