@@ -2,14 +2,16 @@ import styled from 'styled-components';
 
 export const MainWrapper = styled.section`
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 
     ul {
         list-style: none;
         text-align: center;
         display: flex;
-        margin-top: 630px;
-        margin-left: 235px;
+        margin-top: 640px;
+        margin-left: 85px;
     }
 
     li {
@@ -45,7 +47,7 @@ export const MainArticle = styled.article`
     margin-left: 300px;
     position: relative;
     margin-top: 300px;
-    margin-left: 500px;
+    margin-left: 300px;
     height: 400px;
 
     h1 {
@@ -92,7 +94,7 @@ export const MainArticle = styled.article`
 
 
     @media (max-width: 1200px) {
-        margin-top: 250px;
+        margin-top: 200px;
         width: 200px;
         text-align: center;
         margin-bottom: 0;
@@ -125,8 +127,8 @@ export const MainArticle = styled.article`
 
 export const ImgWrapper = styled.div`
     border-radius: 50%;
-    margin-top: 225px;
-    margin-left: 150px;
+    margin-top: 140px;
+    margin-right: 700px;
     width: 400px;
     height: 400px;
     position: absolute;
@@ -136,7 +138,7 @@ export const ImgWrapper = styled.div`
 
   @media (max-width: 1200px) {
         position: absolute;
-        margin-top: 50px;
+        top: -50px;
         width: 150px;
         height: 150px;
         display: block;
