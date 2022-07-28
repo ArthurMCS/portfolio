@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 const HomePage = styled.div`
     overflow-y: hidden;
-    display: flex;
-    align-items: center;     
-    flex-direction: column;
      @media (max-width:1200px){
       display: flex;
       align-items: center;     

@@ -39,7 +39,7 @@ export default function Article() {
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/arthurmoreiracostasousa/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/arthurmoreiracs/" target="_blank" rel="noreferrer">
             <AiFillLinkedin />
           </a>
         </li>
