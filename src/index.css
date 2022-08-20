@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;800&display=swap');
+
+body {
+  background-color: #111111;
+  margin: 0;
+  font-family: 'Roboto Slab', serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1 {
+  font-size:  40px;
+  color: #3cff00;
+}
+
+p {
+  font-size: 20px;
+  color: #e9e6e6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3cff00;
+  border-radius: 50px;
+}
+
+
