@@ -49,7 +49,7 @@ export default function Article() {
         <p className="p1">Meu nome é Arthur Moreira.</p>
         <p className="p2">Desenvolvedor Full-Stack, com foco em Javascript, React, Node-JS, mas sempre disposto a aprender e contribuir mais. </p>
         <a
-          href="https://drive.google.com/file/d/1JiQMkc50576SdwAf6BS-hcIjms6vgLya/view?usp=sharing"
+          href="https://drive.google.com/file/d/1eg7RMzxIxUMlmUK4zpiMtHY75JZ68ogh/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
