@@ -33,7 +33,7 @@ export default function ContactForm() {
           <Form.Control name="email" type="email" placeholder="Seu email" required />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Messagem</Form.Label>
+          <Form.Label>Mensagem</Form.Label>
           <Form.Control name="message" as="textarea" cols={30} rows={8} placeholder="Sua mensagem" required />
         </Form.Group>
         <Button variant="dark" type="submit" size="lg">
